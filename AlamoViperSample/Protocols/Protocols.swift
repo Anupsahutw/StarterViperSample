@@ -60,7 +60,7 @@ protocol PostListRemoteDataManagerInputProtocol: class {
 
 protocol PostListRemoteDataManagerOutputProtocol: class {
     // REMOTEDATAMANAGER -> INTERACTOR
-    func onPostsRetrieved(_ posts: [PostModel])
+    func onPostsRetrieved(_ posts: PostModel)
     func onError()
 }
 

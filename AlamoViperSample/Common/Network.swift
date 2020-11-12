@@ -10,8 +10,6 @@ protocol Requestable {
     
     var endpoint: String { get }
     var method: Network.Method { get }
-    var parameters: [String: Any] { get }
-    var headers: [String: String]? { get }
     var baseUrl: URL { get }
 }
 
@@ -91,10 +89,8 @@ extension Network {
         switch req.method {
         case .get:
             var request = URLRequest(url: url)
-            var components = URLComponents(url: url, resolvingAgainstBaseURL: true)!
-            components.queryItems = req.parameters.map { URLQueryItem(name: $0.key, value: $0.value as? String) }
+            let components = URLComponents(url: url, resolvingAgainstBaseURL: true)!
             request = URLRequest(url: components.url!)
-            request.allHTTPHeaderFields = req.headers
             request.httpMethod = req.method.rawValue
             request.timeoutInterval = 25
             return request
