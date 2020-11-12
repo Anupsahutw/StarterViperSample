@@ -2,7 +2,7 @@ import Foundation
 import Alamofire
 
 
-let bffBaseURL = "https://api.openweathermap.org/data/2.5/weather?lat=\(12.9716)&lon=\(77.5946)&appid=66ca84031a262702991f8c38622e7f9a&units=metric"
+let bffBaseURL = "https://api.openweathermap.org/data/2.5/weather"
 
 
 protocol Requestable {
