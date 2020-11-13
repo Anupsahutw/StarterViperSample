@@ -23,9 +23,9 @@ protocol PostListViewProtocol: class {
 }
 
 protocol PostListWireFrameProtocol: class {
-    static func createPostListModule() -> UIViewController
+    static func createGetListModule() -> UIViewController
     // PRESENTER -> WIREFRAME
-    func presentPostDetailScreen(from view: PostListViewProtocol, forPost post: PostModel)
+    func presentGetDetailScreen(from view: PostListViewProtocol, forPost post: PostModel)
 }
 
 protocol PostListPresenterProtocol: class {
