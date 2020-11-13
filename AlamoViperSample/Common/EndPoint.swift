@@ -18,8 +18,15 @@ struct Endpoint: Requestable {
     }
     
     var endpoint: String {
-        return "?lat=\(12.9716)&lon=\(77.5946)&appid=66ca84031a262702991f8c38622e7f9a&units=metric"
+        return "weather"
     }
+    
+    var parameters: [String: Any] { return  [
+            "lat": "12.9716",
+            "lon": "77.5946",
+            "appid": "4347017c42dffe7829cf04ba936c5232",
+            "units": "metric"
+        ] }
     
     var method: Network.Method {
         return .get

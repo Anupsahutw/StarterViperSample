@@ -2,12 +2,13 @@ import Foundation
 import Alamofire
 
 
-let bffBaseURL = "https://api.openweathermap.org/data/2.5/weather"
+let bffBaseURL = "https://api.openweathermap.org/data/2.5/"
 
 
 protocol Requestable {
     associatedtype ResponseType: Codable
     
+    var parameters: [String: Any] { get }
     var endpoint: String { get }
     var method: Network.Method { get }
     var baseUrl: URL { get }
@@ -89,7 +90,8 @@ extension Network {
         switch req.method {
         case .get:
             var request = URLRequest(url: url)
-            let components = URLComponents(url: url, resolvingAgainstBaseURL: true)!
+            var components = URLComponents(url: url, resolvingAgainstBaseURL: true)!
+            components.queryItems = req.parameters.map { URLQueryItem(name: $0.key, value: $0.value as? String) }
             request = URLRequest(url: components.url!)
             request.httpMethod = req.method.rawValue
             request.timeoutInterval = 25
