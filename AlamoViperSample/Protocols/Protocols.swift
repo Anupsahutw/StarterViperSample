@@ -40,7 +40,7 @@ protocol PostListPresenterProtocol: class {
 
 protocol PostListInteractorInputProtocol: class {
     var presenter: PostListInteractorOutputProtocol? { get set }
-    
+    var remoteDatamanager: PostListRemoteDataManagerInputProtocol? { get set }
     // PRESENTER -> INTERACTOR
     func retrievePostList()
 }
