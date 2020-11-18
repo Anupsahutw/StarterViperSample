@@ -190,7 +190,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8F9B7C09255C2DE50009FA95 /* Common */ = {
+		8F9B7C09255C2DE50009FA95 /* Common-modules */ = {
 			isa = PBXGroup;
 			children = (
 				8FD70DAF255D761500754F29 /* EndPoint.swift */,
@@ -198,7 +198,7 @@
 				8F9B7C0C255C31A30009FA95 /* Network.swift */,
 				8F9B7C0A255C30E40009FA95 /* NetworkProtocol.swift */,
 			);
-			path = Common;
+			path = "Common-modules";
 			sourceTree = "<group>";
 		};
 		8FA4F030255A90C900F2257B = {
@@ -226,9 +226,8 @@
 		8FA4F03B255A90C900F2257B /* AlamoViperSample */ = {
 			isa = PBXGroup;
 			children = (
-				8FEB979F25650B1100F3BC2A /* Detail */,
-				8FEB9798256507D200F3BC2A /* Weather */,
-				8F9B7C09255C2DE50009FA95 /* Common */,
+				8FEB97AD25650E8D00F3BC2A /* App-modules */,
+				8F9B7C09255C2DE50009FA95 /* Common-modules */,
 				8FA4F03C255A90C900F2257B /* AppDelegate.swift */,
 				8FA4F042255A90C900F2257B /* Main.storyboard */,
 				8FA4F045255A90D000F2257B /* Assets.xcassets */,
@@ -339,6 +338,15 @@
 			);
 			name = Presenter;
 			path = ../../../FinalViperSample/AlamoViperSample/Detail/Presenter;
+			sourceTree = "<group>";
+		};
+		8FEB97AD25650E8D00F3BC2A /* App-modules */ = {
+			isa = PBXGroup;
+			children = (
+				8FEB979F25650B1100F3BC2A /* Detail */,
+				8FEB9798256507D200F3BC2A /* Weather */,
+			);
+			path = "App-modules";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
