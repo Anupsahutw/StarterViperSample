@@ -20,7 +20,7 @@ class GetListPresenter: PostListPresenterProtocol {
     }
     
     func showPostDetail(forPost post: PostModel) {
-    
+       
     }
 }
 

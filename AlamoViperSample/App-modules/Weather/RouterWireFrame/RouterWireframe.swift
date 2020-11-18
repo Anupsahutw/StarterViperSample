@@ -13,7 +13,8 @@ class GetListWireFrame: PostListWireFrameProtocol {
     static func createGetListModule() -> UIViewController {
        let navController = mainStoryboard.instantiateViewController(withIdentifier: "NavigationController")
         if let view = navController.children.first as? WeatherViewController {
-               
+                
+                
                 return navController
             }
             return UIViewController()
@@ -25,7 +26,11 @@ class GetListWireFrame: PostListWireFrameProtocol {
         
     
     func presentGetDetailScreen(from view: PostListViewProtocol, forPost post: PostModel) {
-        //
+        let postDetailViewController = PostDetailWireFrame.createPostDetailModule(forPost: post)
+        
+             if let sourceView = view as? UIViewController {
+                sourceView.navigationController?.pushViewController(postDetailViewController, animated: true)
+             }
     }
     
 }
