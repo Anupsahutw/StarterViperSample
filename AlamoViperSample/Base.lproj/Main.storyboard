@@ -98,5 +98,48 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="1Su-2c-owJ">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o1a-nE-S40" customClass="DetailViewController" customModule="AlamoViperSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xEa-9S-axB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zm2-5s-a3h">
+                                <rect key="frame" x="20" y="164" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8P-TT-haJ">
+                                <rect key="frame" x="20" y="235" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Q8P-TT-haJ" firstAttribute="leading" secondItem="Ve1-kt-NRH" secondAttribute="leading" constant="20" id="4xd-OR-Pr7"/>
+                            <constraint firstItem="Zm2-5s-a3h" firstAttribute="leading" secondItem="Ve1-kt-NRH" secondAttribute="leading" constant="20" id="AnM-EW-A7h"/>
+                            <constraint firstItem="Ve1-kt-NRH" firstAttribute="trailing" secondItem="Zm2-5s-a3h" secondAttribute="trailing" constant="20" id="Gpd-Sn-1Si"/>
+                            <constraint firstItem="Q8P-TT-haJ" firstAttribute="centerX" secondItem="Ve1-kt-NRH" secondAttribute="centerX" id="MT2-fu-ucQ"/>
+                            <constraint firstItem="Q8P-TT-haJ" firstAttribute="top" secondItem="Zm2-5s-a3h" secondAttribute="bottom" constant="50" id="V28-AF-RPq"/>
+                            <constraint firstItem="Ve1-kt-NRH" firstAttribute="trailing" secondItem="Q8P-TT-haJ" secondAttribute="trailing" constant="20" id="jZq-D6-BOe"/>
+                            <constraint firstItem="Zm2-5s-a3h" firstAttribute="centerX" secondItem="Ve1-kt-NRH" secondAttribute="centerX" id="qtG-Lc-2KF"/>
+                            <constraint firstItem="Zm2-5s-a3h" firstAttribute="top" secondItem="Ve1-kt-NRH" secondAttribute="top" constant="120" id="u4q-gL-Dh8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ve1-kt-NRH"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Q8P-TT-haJ" id="93l-zD-eAe"/>
+                        <outlet property="titleLabel" destination="Zm2-5s-a3h" id="7cJ-W5-JmQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s26-FJ-T0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2017" y="123"/>
+        </scene>
     </scenes>
 </document>

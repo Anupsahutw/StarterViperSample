@@ -6,14 +6,13 @@
 //  Copyright © 2020 Anup.Sahu. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 protocol PostListViewProtocol: class {
-    //var presenter: PostListPresenterProtocol? { get set }
+    var presenter: PostListPresenterProtocol? { get set }
     
     // PRESENTER -> VIEW
-    func showGets()
+    func showGets(with gets: PostModel)
     
     func showError()
     
@@ -41,13 +40,14 @@ protocol PostListPresenterProtocol: class {
 protocol PostListInteractorInputProtocol: class {
     var presenter: PostListInteractorOutputProtocol? { get set }
     var remoteDatamanager: PostListRemoteDataManagerInputProtocol? { get set }
+    
     // PRESENTER -> INTERACTOR
     func retrievePostList()
 }
 
 protocol PostListInteractorOutputProtocol: class {
     // INTERACTOR -> PRESENTER
-    func didRetrievePosts(_ posts: [PostModel])
+    func didRetrievePosts(_ posts: PostModel)
     func onError()
 }
 

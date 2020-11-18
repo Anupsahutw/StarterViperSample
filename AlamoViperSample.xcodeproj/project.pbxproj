@@ -31,6 +31,12 @@
 		8FA4F05F255A90D000F2257B /* AlamoViperSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA4F05E255A90D000F2257B /* AlamoViperSampleUITests.swift */; };
 		8FD70DAE255D75CF00754F29 /* RemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD70DAD255D75CF00754F29 /* RemoteDataManager.swift */; };
 		8FD70DB0255D761500754F29 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD70DAF255D761500754F29 /* EndPoint.swift */; };
+		8FEB979B2565084800F3BC2A /* GetListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB979A2565084800F3BC2A /* GetListInteractor.swift */; };
+		8FEB979E256508C000F3BC2A /* GetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB979D256508C000F3BC2A /* GetListPresenter.swift */; };
+		8FEB97A825650B2800F3BC2A /* DetailRouterWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB97A125650B2800F3BC2A /* DetailRouterWireFrame.swift */; };
+		8FEB97A925650B2800F3BC2A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB97A325650B2800F3BC2A /* DetailViewController.swift */; };
+		8FEB97AA25650B2800F3BC2A /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB97A525650B2800F3BC2A /* Protocol.swift */; };
+		8FEB97AB25650B2800F3BC2A /* PresenterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB97A725650B2800F3BC2A /* PresenterDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +92,12 @@
 		8FA4F060255A90D000F2257B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FD70DAD255D75CF00754F29 /* RemoteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataManager.swift; sourceTree = "<group>"; };
 		8FD70DAF255D761500754F29 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		8FEB979A2565084800F3BC2A /* GetListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetListInteractor.swift; sourceTree = "<group>"; };
+		8FEB979D256508C000F3BC2A /* GetListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetListPresenter.swift; sourceTree = "<group>"; };
+		8FEB97A125650B2800F3BC2A /* DetailRouterWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRouterWireFrame.swift; sourceTree = "<group>"; };
+		8FEB97A325650B2800F3BC2A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8FEB97A525650B2800F3BC2A /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		8FEB97A725650B2800F3BC2A /* PresenterDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterDetail.swift; sourceTree = "<group>"; };
 		AA9690C64DDD7C94E1F0F638 /* Pods-AlamoViperSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoViperSample.debug.xcconfig"; path = "Target Support Files/Pods-AlamoViperSample/Pods-AlamoViperSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -214,12 +226,9 @@
 		8FA4F03B255A90C900F2257B /* AlamoViperSample */ = {
 			isa = PBXGroup;
 			children = (
-				8F9A2E9D255EA13700A0B269 /* RouterWireFrame */,
-				8FD70DAC255D75CF00754F29 /* Remote */,
+				8FEB979F25650B1100F3BC2A /* Detail */,
+				8FEB9798256507D200F3BC2A /* Weather */,
 				8F9B7C09255C2DE50009FA95 /* Common */,
-				8F9B7C08255C22460009FA95 /* View */,
-				8F9B7BF9255BFD160009FA95 /* Entity */,
-				8F9B7BF6255BF9B10009FA95 /* Protocols */,
 				8FA4F03C255A90C900F2257B /* AppDelegate.swift */,
 				8FA4F042255A90C900F2257B /* Main.storyboard */,
 				8FA4F045255A90D000F2257B /* Assets.xcassets */,
@@ -253,6 +262,83 @@
 				8FD70DAD255D75CF00754F29 /* RemoteDataManager.swift */,
 			);
 			path = Remote;
+			sourceTree = "<group>";
+		};
+		8FEB9798256507D200F3BC2A /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				8FEB979C256508A400F3BC2A /* Presenter */,
+				8FEB97992565082500F3BC2A /* Interactor */,
+				8F9A2E9D255EA13700A0B269 /* RouterWireFrame */,
+				8FD70DAC255D75CF00754F29 /* Remote */,
+				8F9B7C08255C22460009FA95 /* View */,
+				8F9B7BF9255BFD160009FA95 /* Entity */,
+				8F9B7BF6255BF9B10009FA95 /* Protocols */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		8FEB97992565082500F3BC2A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8FEB979A2565084800F3BC2A /* GetListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8FEB979C256508A400F3BC2A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8FEB979D256508C000F3BC2A /* GetListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8FEB979F25650B1100F3BC2A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8FEB97A625650B2800F3BC2A /* Presenter */,
+				8FEB97A025650B2800F3BC2A /* RouterWireFrame */,
+				8FEB97A425650B2800F3BC2A /* Protocol */,
+				8FEB97A225650B2800F3BC2A /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		8FEB97A025650B2800F3BC2A /* RouterWireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				8FEB97A125650B2800F3BC2A /* DetailRouterWireFrame.swift */,
+			);
+			name = RouterWireFrame;
+			path = ../../../FinalViperSample/AlamoViperSample/Detail/RouterWireFrame;
+			sourceTree = "<group>";
+		};
+		8FEB97A225650B2800F3BC2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FEB97A325650B2800F3BC2A /* DetailViewController.swift */,
+			);
+			name = View;
+			path = ../../../FinalViperSample/AlamoViperSample/Detail/View;
+			sourceTree = "<group>";
+		};
+		8FEB97A425650B2800F3BC2A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8FEB97A525650B2800F3BC2A /* Protocol.swift */,
+			);
+			name = Protocol;
+			path = ../../../FinalViperSample/AlamoViperSample/Detail/Protocol;
+			sourceTree = "<group>";
+		};
+		8FEB97A625650B2800F3BC2A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8FEB97A725650B2800F3BC2A /* PresenterDetail.swift */,
+			);
+			name = Presenter;
+			path = ../../../FinalViperSample/AlamoViperSample/Detail/Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -501,13 +587,19 @@
 				8FA4F041255A90C900F2257B /* WeatherViewController.swift in Sources */,
 				8F9B7C01255BFD430009FA95 /* Coord.swift in Sources */,
 				8FA4F03D255A90C900F2257B /* AppDelegate.swift in Sources */,
+				8FEB97AB25650B2800F3BC2A /* PresenterDetail.swift in Sources */,
+				8FEB97A925650B2800F3BC2A /* DetailViewController.swift in Sources */,
 				8F9B7C07255BFD430009FA95 /* PostModel.swift in Sources */,
 				8F9B7C0F255C327C0009FA95 /* AppError.swift in Sources */,
+				8FEB97A825650B2800F3BC2A /* DetailRouterWireFrame.swift in Sources */,
 				8F9B7C06255BFD430009FA95 /* Sys.swift in Sources */,
 				8FD70DB0255D761500754F29 /* EndPoint.swift in Sources */,
 				8F9B7BF8255BFA4A0009FA95 /* Protocols.swift in Sources */,
 				8F9B7C0B255C30E40009FA95 /* NetworkProtocol.swift in Sources */,
 				8F9B7C05255BFD430009FA95 /* Clouds.swift in Sources */,
+				8FEB979B2565084800F3BC2A /* GetListInteractor.swift in Sources */,
+				8FEB97AA25650B2800F3BC2A /* Protocol.swift in Sources */,
+				8FEB979E256508C000F3BC2A /* GetListPresenter.swift in Sources */,
 				8F9B7C03255BFD430009FA95 /* Weather.swift in Sources */,
 				8F9B7C04255BFD430009FA95 /* Wind.swift in Sources */,
 			);
