@@ -24,7 +24,6 @@ class PostListRemoteDataManager:PostListRemoteDataManagerInputProtocol {
                    switch result {
                    case .success(let successResponse):
                     self.remoteRequestHandler?.onPostsRetrieved(successResponse)
-                       
                    case .failure( _):
                        self.remoteRequestHandler?.onError()
                    }
