@@ -293,7 +293,7 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		8FEB979F25650B1100F3BC2A /* Detail */ = {
+		8FEB979F25650B1100F3BC2A /* Detailmode */ = {
 			isa = PBXGroup;
 			children = (
 				8FFA94B1256BD64500642FB3 /* View */,
@@ -301,13 +301,13 @@
 				8FFA94AB256BD62900642FB3 /* Protocol */,
 				8FFA94A8256BD61E00642FB3 /* Presenter */,
 			);
-			path = Detail;
+			path = Detailmode;
 			sourceTree = "<group>";
 		};
 		8FEB97AD25650E8D00F3BC2A /* App-modules */ = {
 			isa = PBXGroup;
 			children = (
-				8FEB979F25650B1100F3BC2A /* Detail */,
+				8FEB979F25650B1100F3BC2A /* Detailmode */,
 				8FEB9798256507D200F3BC2A /* Weather */,
 			);
 			path = "App-modules";
