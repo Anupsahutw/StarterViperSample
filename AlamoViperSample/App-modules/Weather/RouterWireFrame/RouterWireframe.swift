@@ -14,7 +14,6 @@ class GetListWireFrame: PostListWireFrameProtocol {
        let navController = mainStoryboard.instantiateViewController(withIdentifier: "NavigationController")
         if let view = navController.children.first as? WeatherViewController {
                 
-                
                 return navController
             }
             return UIViewController()
