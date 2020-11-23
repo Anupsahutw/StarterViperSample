@@ -296,13 +296,13 @@
 		8FEB97AD25650E8D00F3BC2A /* App-modules */ = {
 			isa = PBXGroup;
 			children = (
-				8FFA94BC256BDA3F00642FB3 /* NewDetail */,
+				8FFA94BC256BDA3F00642FB3 /* Detail */,
 				8FEB9798256507D200F3BC2A /* Weather */,
 			);
 			path = "App-modules";
 			sourceTree = "<group>";
 		};
-		8FFA94BC256BDA3F00642FB3 /* NewDetail */ = {
+		8FFA94BC256BDA3F00642FB3 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 				8FFA94C7256BDDF900642FB3 /* Protocol */,
@@ -310,7 +310,7 @@
 				8FFA94C1256BDD6500642FB3 /* View */,
 				8FFA94C0256BDBF400642FB3 /* Presenter */,
 			);
-			path = NewDetail;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		8FFA94C0256BDBF400642FB3 /* Presenter */ = {
