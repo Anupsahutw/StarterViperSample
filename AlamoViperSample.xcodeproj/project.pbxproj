@@ -299,9 +299,17 @@
 		8FFA94BC256BDA3F00642FB3 /* NewDetail */ = {
 			isa = PBXGroup;
 			children = (
-				8FFA94BD256BDB8900642FB3 /* Presenter.swift */,
+				8FFA94C0256BDBF400642FB3 /* Presenter */,
 			);
 			path = NewDetail;
+			sourceTree = "<group>";
+		};
+		8FFA94C0256BDBF400642FB3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8FFA94BD256BDB8900642FB3 /* Presenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
