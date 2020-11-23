@@ -34,6 +34,9 @@
 		8FEB97BB25652D5E00F3BC2A /* RouterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB97BA25652D5E00F3BC2A /* RouterWireframe.swift */; };
 		8FEB97BD25652D9500F3BC2A /* GetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB97BC25652D9500F3BC2A /* GetListPresenter.swift */; };
 		8FFA94BE256BDB8900642FB3 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFA94BD256BDB8900642FB3 /* Presenter.swift */; };
+		8FFA94C3256BDD9400642FB3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFA94C2256BDD9400642FB3 /* DetailViewController.swift */; };
+		8FFA94C6256BDDDC00642FB3 /* DetailRouterWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFA94C5256BDDDC00642FB3 /* DetailRouterWireFrame.swift */; };
+		8FFA94C9256BDE1100642FB3 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFA94C8256BDE1100642FB3 /* Protocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,9 @@
 		8FEB97BA25652D5E00F3BC2A /* RouterWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterWireframe.swift; sourceTree = "<group>"; };
 		8FEB97BC25652D9500F3BC2A /* GetListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetListPresenter.swift; sourceTree = "<group>"; };
 		8FFA94BD256BDB8900642FB3 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		8FFA94C2256BDD9400642FB3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8FFA94C5256BDDDC00642FB3 /* DetailRouterWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouterWireFrame.swift; sourceTree = "<group>"; };
+		8FFA94C8256BDE1100642FB3 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		AA9690C64DDD7C94E1F0F638 /* Pods-AlamoViperSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoViperSample.debug.xcconfig"; path = "Target Support Files/Pods-AlamoViperSample/Pods-AlamoViperSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -299,6 +305,9 @@
 		8FFA94BC256BDA3F00642FB3 /* NewDetail */ = {
 			isa = PBXGroup;
 			children = (
+				8FFA94C7256BDDF900642FB3 /* Protocol */,
+				8FFA94C4256BDDA700642FB3 /* RouterWireFrame */,
+				8FFA94C1256BDD6500642FB3 /* View */,
 				8FFA94C0256BDBF400642FB3 /* Presenter */,
 			);
 			path = NewDetail;
@@ -310,6 +319,30 @@
 				8FFA94BD256BDB8900642FB3 /* Presenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8FFA94C1256BDD6500642FB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FFA94C2256BDD9400642FB3 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8FFA94C4256BDDA700642FB3 /* RouterWireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				8FFA94C5256BDDDC00642FB3 /* DetailRouterWireFrame.swift */,
+			);
+			path = RouterWireFrame;
+			sourceTree = "<group>";
+		};
+		8FFA94C7256BDDF900642FB3 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8FFA94C8256BDE1100642FB3 /* Protocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,7 +590,9 @@
 				8F9B7C02255BFD430009FA95 /* Main.swift in Sources */,
 				8FA4F041255A90C900F2257B /* WeatherViewController.swift in Sources */,
 				8F9B7C01255BFD430009FA95 /* Coord.swift in Sources */,
+				8FFA94C6256BDDDC00642FB3 /* DetailRouterWireFrame.swift in Sources */,
 				8FA4F03D255A90C900F2257B /* AppDelegate.swift in Sources */,
+				8FFA94C3256BDD9400642FB3 /* DetailViewController.swift in Sources */,
 				8F9B7C07255BFD430009FA95 /* PostModel.swift in Sources */,
 				8F9B7C0F255C327C0009FA95 /* AppError.swift in Sources */,
 				8F9B7C06255BFD430009FA95 /* Sys.swift in Sources */,
@@ -566,6 +601,7 @@
 				8F9B7C05255BFD430009FA95 /* Clouds.swift in Sources */,
 				8FEB97B925652D0000F3BC2A /* Protocols.swift in Sources */,
 				8FEB979B2565084800F3BC2A /* GetListInteractor.swift in Sources */,
+				8FFA94C9256BDE1100642FB3 /* Protocol.swift in Sources */,
 				8F9B7C03255BFD430009FA95 /* Weather.swift in Sources */,
 				8FEB97BD25652D9500F3BC2A /* GetListPresenter.swift in Sources */,
 				8F9B7C04255BFD430009FA95 /* Wind.swift in Sources */,
