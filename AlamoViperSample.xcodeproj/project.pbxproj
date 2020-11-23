@@ -33,10 +33,6 @@
 		8FEB97B925652D0000F3BC2A /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB97B825652D0000F3BC2A /* Protocols.swift */; };
 		8FEB97BB25652D5E00F3BC2A /* RouterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB97BA25652D5E00F3BC2A /* RouterWireframe.swift */; };
 		8FEB97BD25652D9500F3BC2A /* GetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB97BC25652D9500F3BC2A /* GetListPresenter.swift */; };
-		8FFA94B5256BD69600642FB3 /* PresenterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFA94B4256BD69600642FB3 /* PresenterDetail.swift */; };
-		8FFA94B7256BD6D600642FB3 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFA94B6256BD6D600642FB3 /* Protocol.swift */; };
-		8FFA94B9256BD70200642FB3 /* DetailRouterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFA94B8256BD70200642FB3 /* DetailRouterWireframe.swift */; };
-		8FFA94BB256BD75500642FB3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFA94BA256BD75500642FB3 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,10 +90,6 @@
 		8FEB97B825652D0000F3BC2A /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		8FEB97BA25652D5E00F3BC2A /* RouterWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterWireframe.swift; sourceTree = "<group>"; };
 		8FEB97BC25652D9500F3BC2A /* GetListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetListPresenter.swift; sourceTree = "<group>"; };
-		8FFA94B4256BD69600642FB3 /* PresenterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PresenterDetail.swift; path = ../../../../../../../PresenterDetail.swift; sourceTree = "<group>"; };
-		8FFA94B6256BD6D600642FB3 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Protocol.swift; path = ../../../../../../../Protocol.swift; sourceTree = "<group>"; };
-		8FFA94B8256BD70200642FB3 /* DetailRouterWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailRouterWireframe.swift; path = ../../../../../../../DetailRouterWireframe.swift; sourceTree = "<group>"; };
-		8FFA94BA256BD75500642FB3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../../../../../../../DetailViewController.swift; sourceTree = "<group>"; };
 		AA9690C64DDD7C94E1F0F638 /* Pods-AlamoViperSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoViperSample.debug.xcconfig"; path = "Target Support Files/Pods-AlamoViperSample/Pods-AlamoViperSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -293,61 +285,21 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		8FEB979F25650B1100F3BC2A /* Detailmode */ = {
-			isa = PBXGroup;
-			children = (
-				8FFA94B1256BD64500642FB3 /* View */,
-				8FFA94AE256BD63B00642FB3 /* RouterWireFrame */,
-				8FFA94AB256BD62900642FB3 /* Protocol */,
-				8FFA94A8256BD61E00642FB3 /* Presenter */,
-			);
-			path = Detailmode;
-			sourceTree = "<group>";
-		};
 		8FEB97AD25650E8D00F3BC2A /* App-modules */ = {
 			isa = PBXGroup;
 			children = (
-				8FEB979F25650B1100F3BC2A /* Detailmode */,
+				8FFA94BC256BDA3F00642FB3 /* NewDetail */,
 				8FEB9798256507D200F3BC2A /* Weather */,
 			);
 			path = "App-modules";
 			sourceTree = "<group>";
 		};
-		8FFA94A8256BD61E00642FB3 /* Presenter */ = {
+		8FFA94BC256BDA3F00642FB3 /* NewDetail */ = {
 			isa = PBXGroup;
 			children = (
-				8FFA94B4256BD69600642FB3 /* PresenterDetail.swift */,
 			);
-			name = Presenter;
-			path = "AlamoViperSample/App-modules/Presenter";
-			sourceTree = SOURCE_ROOT;
-		};
-		8FFA94AB256BD62900642FB3 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				8FFA94B6256BD6D600642FB3 /* Protocol.swift */,
-			);
-			name = Protocol;
-			path = "AlamoViperSample/App-modules/Protocol";
-			sourceTree = SOURCE_ROOT;
-		};
-		8FFA94AE256BD63B00642FB3 /* RouterWireFrame */ = {
-			isa = PBXGroup;
-			children = (
-				8FFA94B8256BD70200642FB3 /* DetailRouterWireframe.swift */,
-			);
-			name = RouterWireFrame;
-			path = "AlamoViperSample/App-modules/RouterWireFrame";
-			sourceTree = SOURCE_ROOT;
-		};
-		8FFA94B1256BD64500642FB3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8FFA94BA256BD75500642FB3 /* DetailViewController.swift */,
-			);
-			name = View;
-			path = "AlamoViperSample/App-modules/View";
-			sourceTree = SOURCE_ROOT;
+			path = NewDetail;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -599,17 +551,13 @@
 				8F9B7C06255BFD430009FA95 /* Sys.swift in Sources */,
 				8FD70DB0255D761500754F29 /* EndPoint.swift in Sources */,
 				8F9B7C0B255C30E40009FA95 /* NetworkProtocol.swift in Sources */,
-				8FFA94BB256BD75500642FB3 /* DetailViewController.swift in Sources */,
 				8F9B7C05255BFD430009FA95 /* Clouds.swift in Sources */,
 				8FEB97B925652D0000F3BC2A /* Protocols.swift in Sources */,
-				8FFA94B5256BD69600642FB3 /* PresenterDetail.swift in Sources */,
 				8FEB979B2565084800F3BC2A /* GetListInteractor.swift in Sources */,
 				8F9B7C03255BFD430009FA95 /* Weather.swift in Sources */,
 				8FEB97BD25652D9500F3BC2A /* GetListPresenter.swift in Sources */,
 				8F9B7C04255BFD430009FA95 /* Wind.swift in Sources */,
 				8FEB97BB25652D5E00F3BC2A /* RouterWireframe.swift in Sources */,
-				8FFA94B7256BD6D600642FB3 /* Protocol.swift in Sources */,
-				8FFA94B9256BD70200642FB3 /* DetailRouterWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
