@@ -33,6 +33,7 @@
 		8FEB97B925652D0000F3BC2A /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB97B825652D0000F3BC2A /* Protocols.swift */; };
 		8FEB97BB25652D5E00F3BC2A /* RouterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB97BA25652D5E00F3BC2A /* RouterWireframe.swift */; };
 		8FEB97BD25652D9500F3BC2A /* GetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB97BC25652D9500F3BC2A /* GetListPresenter.swift */; };
+		8FFA94BE256BDB8900642FB3 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFA94BD256BDB8900642FB3 /* Presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		8FEB97B825652D0000F3BC2A /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		8FEB97BA25652D5E00F3BC2A /* RouterWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterWireframe.swift; sourceTree = "<group>"; };
 		8FEB97BC25652D9500F3BC2A /* GetListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetListPresenter.swift; sourceTree = "<group>"; };
+		8FFA94BD256BDB8900642FB3 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		AA9690C64DDD7C94E1F0F638 /* Pods-AlamoViperSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoViperSample.debug.xcconfig"; path = "Target Support Files/Pods-AlamoViperSample/Pods-AlamoViperSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,7 +219,7 @@
 		8FA4F03B255A90C900F2257B /* AlamoViperSample */ = {
 			isa = PBXGroup;
 			children = (
-				8FEB97AD25650E8D00F3BC2A /* NewApp-modules */,
+				8FEB97AD25650E8D00F3BC2A /* App-modules */,
 				8F9B7C09255C2DE50009FA95 /* Network-modules */,
 				8FA4F03C255A90C900F2257B /* AppDelegate.swift */,
 				8FA4F042255A90C900F2257B /* Main.storyboard */,
@@ -285,18 +287,19 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		8FEB97AD25650E8D00F3BC2A /* NewApp-modules */ = {
+		8FEB97AD25650E8D00F3BC2A /* App-modules */ = {
 			isa = PBXGroup;
 			children = (
 				8FFA94BC256BDA3F00642FB3 /* NewDetail */,
 				8FEB9798256507D200F3BC2A /* Weather */,
 			);
-			path = "NewApp-modules";
+			path = "App-modules";
 			sourceTree = "<group>";
 		};
 		8FFA94BC256BDA3F00642FB3 /* NewDetail */ = {
 			isa = PBXGroup;
 			children = (
+				8FFA94BD256BDB8900642FB3 /* Presenter.swift */,
 			);
 			path = NewDetail;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FD70DAE255D75CF00754F29 /* RemoteDataManager.swift in Sources */,
+				8FFA94BE256BDB8900642FB3 /* Presenter.swift in Sources */,
 				8F9B7C0D255C31A30009FA95 /* Network.swift in Sources */,
 				8F9B7C02255BFD430009FA95 /* Main.swift in Sources */,
 				8FA4F041255A90C900F2257B /* WeatherViewController.swift in Sources */,
